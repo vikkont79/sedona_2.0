@@ -1,0 +1,15 @@
+.page {
+    block-size: 100%;
+    font-family: PT Sans;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.page__body {
+    min-block-size: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    margin: 0;
+    background-color: $white;
+    color: $black;
+}
