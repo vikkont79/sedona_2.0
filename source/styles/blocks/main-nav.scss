@@ -20,11 +20,6 @@
   padding-block: 10px 6px;
 }
 
-.main-nav__item:has(.logo) {
-  outline: 2px $black solid;
-}
-
-
 .main-nav__link {
   display: block;
   color: inherit;

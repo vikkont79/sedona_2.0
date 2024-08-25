@@ -1,8 +1,10 @@
 .page-header {
+  min-inline-size: 320px;
+  block-size: 56px;
   text-align: center;
+  font-size: 18px;
   line-height: 40px;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-weight: 700;  
 }
 
 .page-header__nav {  

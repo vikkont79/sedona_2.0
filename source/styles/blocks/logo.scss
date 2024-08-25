@@ -1,7 +1,10 @@
 .logo {
-    padding: 0;
+  position: relative;
+  z-index: 2;
 }
 
 .logo__img {
-    margin-block-end: -42px;
+  inline-size: 102px;
+  block-size: 84px;
+  margin-block-end: -42px;
 }

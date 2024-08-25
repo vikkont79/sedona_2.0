@@ -1,4 +1,19 @@
 .intro {
-    padding-inline: 19px;
-    padding-block-start: 90px;
+  min-inline-size: 320px;
+  block-size: 388px;
+  position: relative;  
+  background-image: url("../../images/intro-triangle.svg"), url("../../images/back-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 100% auto, cover;
+  background-position: bottom, center;
 }
+
+.intro__img {
+  display: block;
+  position: absolute;
+  top: 90px;
+  bottom: 85px;
+  left: 19px;
+  right: 19px;
+}
+

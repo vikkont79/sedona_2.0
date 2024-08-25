@@ -1,0 +1,15 @@
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  list-style-type: none;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inline-size: 46px;
+  block-size: 48px;
+  background-color: $light_blue;
+}
