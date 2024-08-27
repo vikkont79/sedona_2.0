@@ -3,10 +3,17 @@
   list-style-type: none;
   background-color: $light_blue;
   color: $white;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
     background-color: $white;
     color: $black;
+    font-size: 14px;
+    line-height: 26px;
   }
 }
 
@@ -14,10 +21,19 @@
   box-shadow:
     0px -1px 0px 0px #01010133,
     inset 0px 1px 0px 0px #FFFFFF33;
+
+  @media (min-width: $tablet-width) {
+    box-shadow: none;
+  }
 }
 
 .main-nav__item:not(.main-nav__item:has(.logo)) {
   padding-block: 10px 6px;
+
+  @media (min-width: $tablet-width) {
+    inline-size: 153px;
+    padding-block: 16px 14px;
+  }
 }
 
 .main-nav__link {

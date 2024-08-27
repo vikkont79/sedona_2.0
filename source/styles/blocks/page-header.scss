@@ -1,22 +1,9 @@
-.page-header {
-  min-inline-size: 320px;
-  block-size: 56px;
-  text-align: center;
-  font-size: 18px;
-  line-height: 40px;
-  font-weight: 700;  
-}
-
-.page-header__nav {  
-  margin-inline: auto;
-}
-
-.page-header__menu {
-  margin: 0;
+.page-header {    
+  min-block-size: 56px;
+  text-align: center; 
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;    
+    block-size: auto;    
   }
 }
 
@@ -77,8 +64,9 @@
   .page-header__nav--opened .page-header__menu {
     display: block;
     position: absolute;
+    left: 0;
     z-index: 2;
-    inline-size: 100%;
+    min-inline-size: 100%;
   }
 
   .page-header__nav--opened .main-nav__item:has(.logo) {
