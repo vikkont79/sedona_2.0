@@ -5,7 +5,7 @@
 
 
   @media (min-width: $tablet-width) {
-    inline-size: 768px;
+    min-inline-size: 768px;
     max-inline-size: inherit;
   }
 

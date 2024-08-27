@@ -1,10 +1,27 @@
-.intro {  
+.intro {
   block-size: 388px;
-  position: relative;  
-  background-image: url("../../images/intro-triangle.svg"), url("../../images/back-mobile@1x.jpg");
+  position: relative;
+  background-image: url("../../images/intro-triangle.svg"),
+    image-set(
+      url("../../images/back-mobile@1x.webp") 1x type("image/webp"),
+      url("../../images/back-mobile@2x.webp") 2x type("image/webp"),
+      url("../../images/back-mobile@1x.jpg") 1x type("image/jpeg"),
+      url("../../images/back-mobile@2x.jpg") 2x type("image/jpeg")
+      );
   background-repeat: no-repeat, no-repeat;
   background-size: 100% auto, cover;
   background-position: bottom, center;
+
+  @media (min-width: $tablet-width) {
+    block-size: 518px;
+    background-image: url("../../images/intro-triangle-tablet.svg"),
+      image-set(
+        url("../../images/back-desktop@1x.webp") 1x type("image/webp"),
+        url("../../images/back-desctop@2x.webp") 2x type("image/webp"),
+        url("../../images/back-desctop@1x.jpg") 1x type("image/jpeg"),
+        url("../../images/back-desctop@2x.jpg") 2x type("image/jpeg")
+        );
+  }
 }
 
 .intro__img {
@@ -12,7 +29,17 @@
   position: absolute;
   top: 90px;
   bottom: 85px;
+  inline-size: 282px;
+  block-size: 214px;
   left: calc((100% - 282px) / 2);
   right: calc((100% - 282px) / 2);
-}
 
+  @media (min-width: $tablet-width) {
+    inline-size: 461px;
+    block-size: 350px;
+    top: 77px;
+    bottom: 91px;
+    left: calc((100% - 461px) / 2);
+    right: calc((100% - 461px) / 2);
+  }
+}
