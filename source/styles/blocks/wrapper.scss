@@ -1,12 +1,10 @@
 .wrapper {
-  min-inline-size: 320px;
-  max-inline-size: 520px;
+  inline-size: 320px; 
   margin-inline: auto;
 
 
   @media (min-width: $tablet-width) {
-    min-inline-size: 768px;
-    max-inline-size: inherit;
+    inline-size: 768px;    
   }
 
   @media (min-width: $desktop-width) {

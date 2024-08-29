@@ -1,6 +1,14 @@
 .page-footer {
   padding-block: 29px 23px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;   
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 45px 43px;
+    padding-block: 36px;
+  }
 }
 
 .page-footer__teg {
@@ -10,8 +18,20 @@
   font-size: 21px;
   font-weight: 700;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;    
+  }
 }
 
 .page-footer__social {
   margin-block-end: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;    
+  }
+}
+
+.page-footer__copyright {
+  display: block;
 }

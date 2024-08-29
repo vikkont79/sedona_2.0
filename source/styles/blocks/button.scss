@@ -1,11 +1,12 @@
-.button {
+.button {  
   padding-inline: 32px;
-  padding-block: 15px 17px;
-  align-items: center;
+  padding-block: 15px 17px;  
   border: none;
   background-color: $light_blue;
   color: $white;
   font-size: 21px;
+  line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
 }
+
