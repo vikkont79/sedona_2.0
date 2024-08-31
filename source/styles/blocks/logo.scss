@@ -7,4 +7,9 @@
   inline-size: 102px;
   block-size: 84px;
   margin-block-end: -42px;
+
+  @media (min-width: $desktop-width) {
+    inline-size: 187px;   
+    block-size: 97px;
+  }
 }

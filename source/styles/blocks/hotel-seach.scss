@@ -39,9 +39,5 @@
 }
 
 .hotel-seach__button {
-  inline-size: 280px;
-
-  @media (min-width: $tablet-width) {
-    inline-size: 458px;        
-  }
+  inline-size: 100%;  
 }

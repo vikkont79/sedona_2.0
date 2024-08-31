@@ -13,4 +13,9 @@
     margin: 0;
     background-color: $white;
     color: $black;
+
+    @media (min-width: $desktop-width) {
+        min-inline-size: 1280px;   
+        background-color: #f2f2f2;
+      }
 }

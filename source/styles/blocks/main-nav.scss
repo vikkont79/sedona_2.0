@@ -34,6 +34,10 @@
     inline-size: 153px;
     padding-block: 16px 14px;
   }
+
+  @media (min-width: $desktop-width) {
+    inline-size: 239px;   
+  }
 }
 
 .main-nav__link {
