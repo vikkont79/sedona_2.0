@@ -41,83 +41,97 @@
       </button>
     </nav>
   </header>
-  <main class="main-index">
+  <main class="main-page">
     <h1 class="visually-hidden">Сайт курорта Седона</h1>
-    <section class="intro wrapper">
+    <section class="page-intro wrapper">
       <h2 class="visually-hidden">Приглашение в Седону</h2>
-      <picture>        
-        <img class="intro__img" src="images/text-index.svg" width="282" height="214" alt="Приглашение в Седону">
+      <picture>
+        <img class="page-intro__img" src="images/text-page.svg" width="229" height="39" alt="Приглашение в Седону">
       </picture>
     </section>
-    <section class="advantages wrapper">
-      <h2 class="visually-hidden">Преимущества Седоны</h2>
-      <p class="advantages__slogan">Седона - небольшой<br> городок в Аризоне, заслуживающий большего!</p>
-      <p class="advantages__intro">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон</p>
-      <p class="advantages__bg"></p>
-      <ul class="advantages__list">
-        <li class="advantages__item">
-          <h3 class="advantages__title">Настоящий городок</h3>
-          <span class="advantages__number">— №1 —</span>
-          <p class="advantages__description">Седона не аттракцион для туристов, там течёт своя жизнь</p>
+    <section class="photo photo__wrapper">
+      <h2 class="visually-hidden">Фотографии курорта Седона</h2>
+      <p class="photo__title">Фото и видео</p>
+      <p class="photo__intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и
+        экономике.</p>
+      <ul class="photo__list">
+        <li class="photo__item image">
+          <a class="image__link" href="#">
+            <picture>
+              <source media="(min-width: 768px)"
+                srcset="images/photo-1-desktop@1x.jpg, images/photo-1-desktop@2x.jpg 2x" width="800" height="256">
+              <source media="(min-width: 768px)" srcset="images/photo-1-tablet@1x.jpg, images/photo-1-tablet@2x.jpg 2x"
+                width="512" height="256">
+              <img class="image__img" srcset="images/photo-1-mobile@2x.jpg 2x" src="images/photo-1-mobile@1x.jpg"
+                width="280" height="280" alt="Фото Неродные просторы.">
+            </picture>
+          </a>
+          <h3 class="image__title">Неродные просторы</h3>
+          <dl class="image__list">
+            <dt>Автор фото:</dt>
+            <dd>Борис</dd>
+          </dl>
         </li>
-        <li class="advantages__item">
-          <picture> 
-            <source media="(min-width: 1280px)" srcset="images/photo-city-desktop@1x.jpg, images/photo-city-desktop@2x.jpg 2x" width="800" height="256">                      
-            <source media="(min-width: 768px)" srcset="images/photo-city-tablet@1x.jpg, images/photo-city-tablet@2x.jpg 2x" width="512" height="256">
-            <img class="advantages__img" srcset="images/photo-city@2x.jpg 2x" src="images/photo-city@1x.jpg" width="520"
-              height="260" alt="Вид на улицу Седоны">
-          </picture>
+        <li class="photo__item image">
+          <a class="image__link" href="#">
+            <picture>
+              <source media="(min-width: 768px)"
+                srcset="images/photo-2-desktop@1x.jpg, images/photo-2-desktop@2x.jpg 2x" width="800" height="256">
+              <source media="(min-width: 768px)" srcset="images/photo-2-tablet@1x.jpg, images/photo-2-tablet@2x.jpg 2x"
+                width="512" height="256">
+              <img class="image__img" srcset="images/photo-2-mobile@2x.jpg 2x" src="images/photo-2-mobile@1x.jpg"
+                width="280" height="280" alt="Фото Местная растительность.">
+            </picture>
+          </a>
+          <h3 class="image__title">Местная растительность</h3>
+          <dl class="image__list">
+            <dt>Автор фото:</dt>
+            <dd>Сергей</dd>
+          </dl>
         </li>
-        <li class="advantages__item advantages__item--home">
-          <h3 class="advantages__title">Жильё</h3>
-          <p class="advantages__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+        <li class="photo__item image">
+          <a class="image__link" href="#">
+            <picture>
+              <source media="(min-width: 768px)"
+                srcset="images/photo-3-desktop@1x.jpg, images/photo-3-desktop@2x.jpg 2x" width="800" height="256">
+              <source media="(min-width: 768px)" srcset="images/photo-3-tablet@1x.jpg, images/photo-3-tablet@2x.jpg 2x"
+                width="512" height="256">
+              <img class="image__img" srcset="images/photo-3-mobile@2x.jpg 2x" src="images/photo-3-mobile@1x.jpg"
+                width="280" height="280" alt="Фото Дорога на север.">
+            </picture>
+          </a>
+          <h3 class="image__title">Дорога на север</h3>
+          <dl class="image__list">
+            <dt>Автор фото:</dt>
+            <dd>Петр</dd>
+          </dl>
         </li>
-        <li class="advantages__item advantages__item--gift">
-          <h3 class="advantages__title">Сувениры</h3>
-          <p class="advantages__description">Не только китайского,<br> но и местного производства!</p>
-        </li>
-        <li class="advantages__item advantages__item--eat">
-          <h3 class="advantages__title">Еда</h3>
-          <p class="advantages__description">Всегда заказывайте фирменый бургер,<br> вы не разочаруетесь!</p>
-        </li>
-        <li class="advantages__item">
-          <h3 class="advantages__title">Там есть мост дьявола</h3>
-          <span class="advantages__number">— №2 —</span>
-          <p class="advantages__description">Да, по нему можно пройти!<br> Если вы осмелитесь, конечно!</p>
-        </li>
-        <li class="advantages__item">
-          <picture>
-            <source media="(min-width: 768px)" srcset="images/photo-bridge-desktop@1x.jpg, images/photo-bridge-desktop@2x.jpg 2x" width="800" height="256">
-            <source media="(min-width: 768px)" srcset="images/photo-bridge-tablet@1x.jpg, images/photo-bridge-tablet@2x.jpg 2x" width="512" height="256">
-            <img class="advantages__img" srcset="images/photo-bridge@2x.jpg 2x" src="images/photo-bridge@1x.jpg"
-              width="520" height="260" alt="Вид на улицу Седоны">
-          </picture>
-        </li>
-        <li class="advantages__item">
-          <h3 class="advantages__title">Небольшая площадь</h3>
-          <span class="advantages__number">— №3 —</span>
-          <p class="advantages__description">Все интересные места находятся очень близко</p>
-        </li>
-        <li class="advantages__item">
-          <h3 class="advantages__title">Красивая дорога</h3>
-          <span class="advantages__number">— №4 —</span>
-          <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-        </li>
-        <li class="advantages__item">
-          <h3 class="advantages__title">Мало туристов</h3>
-          <span class="advantages__number">— №5 —</span>
-          <p class="advantages__description">Большинство едет в Гранд-Каньон и толпится там</p>
+        <li class="photo__item image">
+          <a class="image__link" href="#">
+            <picture>
+              <source media="(min-width: 768px)"
+                srcset="images/photo-4-desktop@1x.jpg, images/photo-4-desktop@2x.jpg 2x" width="800" height="256">
+              <source media="(min-width: 768px)" srcset="images/photo-4-tablet@1x.jpg, images/photo-4-tablet@2x.jpg 2x"
+                width="512" height="256">
+              <img class="image__img" srcset="images/photo-4-mobile@2x.jpg 2x" src="images/photo-4-mobile@1x.jpg"
+                width="280" height="280" alt="Фото Мост дьявола.">
+            </picture>
+          </a>
+          <h3 class="image__title">Мост дьявола</h3>
+          <dl class="image__list">
+            <dt>Автор фото:</dt>
+            <dd>Антон</dd>
+          </dl>
         </li>
       </ul>
     </section>
-    <section class="hotel-seach wrapper">
-      <h2 class="visually-hidden">Бронирование отеля</h2>
-      <p class="hotel-seach__title">Заинтересовались?</p>
-      <p class="hotel-seach__text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в
-        Седоне</p>
-      <button class="hotel-seach__button button" type="button">Найти гостиницу</button>
+    <section class="video wrapper">
+      <h2 class="visually-hidden">Видео курорта Седона</h2>
+      <p class="photo__title">Всё ещё сомневаетесь?</p>
+      <p class="photo__intro">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
+      </p>
     </section>
-    <section class="map wrapper"></section>
+
   </main>
   <footer class="page-footer wrapper">
     <a class="page-footer__teg" href="index.html">#VISITSEDONA</a>
