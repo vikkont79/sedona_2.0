@@ -1,0 +1,21 @@
+.page-intro {
+  block-size: 158px;
+  position: relative;
+  background-image: url("../../images/intro-page-triangle.svg"),
+    image-set(url("../../images/back-page-mobile@1x.webp") 1x type("image/webp"),
+      url("../../images/back-page-mobile@2x.webp") 2x type("image/webp"),
+      url("../../images/back-page-mobile@1x.jpg") 1x type("image/jpeg"),
+      url("../../images/back-page-mobile@2x.jpg") 2x type("image/jpeg"));
+  background-repeat: no-repeat, no-repeat;
+  background-size: 100% auto, cover;
+  background-position: bottom, center;
+}
+
+.page-intro__img {
+  position: absolute;
+  top: 52px;
+  left: calc((100% - 229px) / 2);
+  right: calc((100% - 229px) / 2);
+  inline-size: 229px;
+  block-size: 39px;
+}

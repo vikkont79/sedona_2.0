@@ -1,0 +1,42 @@
+.image {
+  padding-block: 22px 15px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.image__link {
+  display: block;
+  margin-block-end: 11px;
+}
+
+.image__img {
+  display: block;
+}
+
+.image__title {
+  font-weight: 700;
+}
+
+.image__list {
+  margin-block-end: 13px;
+  display: flex;
+  gap: 3px;
+  text-transform: none;
+}
+
+.image__likes { 
+  position: relative;
+  padding-inline-start: 37px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    inline-size: 23px;
+    block-size: 21px;
+    background-image: url("../../icons/like-icon.svg");
+  }
+}
