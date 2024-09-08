@@ -1,7 +1,8 @@
 .video {
-  margin-block-end: 49px;
-  padding-block-end: 66px;
+  display: block;
+  padding-block-end: 49px;  
 }
+
 .video__title {
   margin-block-end: 26px;
   padding-block-start: 32px;
@@ -25,4 +26,21 @@
       url("../../images/video-mobile@1x.jpg") 1x type("image/jpeg"),
       url("../../images/video-mobile@2x.jpg") 2x type("image/jpeg")
       );
+}
+
+.video__controls {
+position: relative;
+padding-inline: 20px;
+top: -52px;
+margin-block-end: -52px;
+}
+
+.video__range-bar {
+  block-size: 45px;
+  background-color :rgba(0, 0, 0, 0.6)
+  }
+
+.video__button-bar {
+  block-size: 66px;
+  background-color: #f2f2f2;
 }

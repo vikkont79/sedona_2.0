@@ -1,0 +1,22 @@
+.range {
+  padding-inline: 22px;
+  padding-block: 22px 20px;
+}
+
+.range__scale {
+  position: relative;
+  block-size: 3px;
+  background-color: rgba(255, 255, 255, 0.2)
+}
+
+.range__toggle {
+  position: absolute;
+  top: -5px;
+  left: 34px;
+  inline-size: 13px;
+  block-size: 13px;
+  border: none;
+  border-radius: 50%;
+  background-color: $white;
+
+}
