@@ -44,12 +44,15 @@
   <main class="main-page">
     <h1 class="visually-hidden">Сайт курорта Седона</h1>
     <section class="page-intro wrapper">
-      <h2 class="visually-hidden">Приглашение в Седону</h2>
+      <h2 class="visually-hidden">Приглашение в Седону</h2>      
       <picture>
-        <img class="page-intro__img" src="images/text-page.svg" width="229" height="39" alt="Приглашение в Седону">
+        <source media="(min-width: 1280px)" srcset="#" width="187" height="97">
+        <source media="(min-width: 768px)" srcset="#" width="102" height="84">
+        <img class="page-intro__img" srcset="images/back-page-mobile@2x.jpg 2x" src="images/back-page-mobile@1x.jpg" width="320" height="214"
+          alt="Панорама гор Седоны">
       </picture>
     </section>
-    <section class="photo photo__wrapper">
+    <section class="photo wrapper">
       <h2 class="visually-hidden">Фотографии курорта Седона</h2>
       <p class="photo__title">Фото и видео</p>
       <p class="photo__intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и
